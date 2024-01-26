@@ -1,0 +1,27 @@
+.home h1 {
+  color: chartreuse;
+}
+
+.about h1 {
+  color: bisque;
+}
+
+.register h1 {
+  color: blueviolet;
+}
+
+.categories h1 {
+  color: aqua;
+}
+
+.commodity h1 {
+  color: cadetblue;
+}
+
+.tocomein h1 {
+  font-size: 90px;
+}
+
+header h1 {
+  color: chocolate;
+}/*# sourceMappingURL=style.css.map */
