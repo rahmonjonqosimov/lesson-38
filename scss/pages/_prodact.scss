@@ -1,3 +1,34 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../../fonts/Montserrat-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1151px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .prodact {
-  // shu yerdan claslar va responsivlikni yozasiz
+  .hero {
+    .hero-style {
+      .hero-text {
+        color: #000;
+        text-align: center;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 140%;
+        letter-spacing: 0.25px;
+      }
+    }
+  }
 }
