@@ -1,0 +1,20 @@
+* button {
+  cursor: pointer;
+}
+
+.prodact {
+  .hero-btn {
+    width: 558px;
+    height: 62px;
+    flex-shrink: 0;
+    background: #ffc000;
+    color: #0d0d0d;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 140%;
+    border: none;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+  }
+}

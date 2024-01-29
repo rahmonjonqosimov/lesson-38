@@ -9,6 +9,7 @@
   margin: 0;
   font-family: Montserrat;
   font-style: normal;
+  outline: none;
 }
 
 .container {
@@ -26,8 +27,56 @@
         font-variant-numeric: lining-nums proportional-nums;
         font-size: 34px;
         font-weight: 700;
+        margin-bottom: 80px;
         line-height: 140%;
         letter-spacing: 0.25px;
+      }
+      .hero-contents {
+        display: flex;
+        gap: 128px;
+        justify-content: space-between;
+        .hero-box {
+          .hero-prices {
+            width: 460px;
+            flex-shrink: 0;
+            margin-bottom: 48px;
+            background: #ffc000;
+            padding: 16px;
+            .hero-price {
+              justify-content: space-between;
+              align-items: center;
+              display: flex;
+              &:nth-child(1) {
+                margin-bottom: 25px;
+              }
+              .hero-text2 {
+                color: #0d0d0d;
+                font-variant-numeric: lining-nums proportional-nums;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 140%;
+                letter-spacing: 0.15px;
+              }
+            }
+          }
+          .hero-images {
+            margin-top: 48px;
+            display: flex;
+            align-items: center;
+            gap: 48px;
+          }
+        }
+        .hero-content {
+          input {
+            width: 558px;
+            height: 59px;
+            margin-bottom: 24px;
+            border: none;
+            flex-shrink: 0;
+            background: #f1f1f1;
+            padding-left: 16px;
+          }
+        }
       }
     }
   }
