@@ -621,8 +621,120 @@
     gap: 5px !important;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: Inter;
+  src: url(../../fonts/Inter-Regular.ttf);
+}
+.register {
+  font-family: Montserrat, sans-serif;
+  background-color: #fafafa;
+  padding: 56px 0 64px;
+}
+.register .container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1190px;
+}
+.register a {
+  text-decoration: none;
+}
+.register input {
+  outline: none;
+}
+.register button {
+  border: none;
+}
+.register ul {
+  list-style: none;
+}
 .register h1 {
-  color: blueviolet;
+  color: #000;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Montserrat;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.25px;
+  margin-bottom: 48px;
+}
+.register .hero {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.register .hero form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+.register .hero form label {
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+.register .hero form input {
+  width: 100%;
+  padding: 14px 24px;
+  border-radius: 4px;
+  border: 1px solid #dbdee7;
+}
+.register .hero form ::-moz-placeholder {
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+}
+.register .hero form ::placeholder {
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+}
+.register .hero form button {
+  color: var(--Black, #0d0d0d);
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px; /* 170% */
+  border-radius: 6px;
+  background: var(--Yellow, #ffc000);
+  width: 250px;
+  height: 50px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.register .hero form .parol {
+  background: url(../../images/iye\ icon.svg);
+  background-repeat: no-repeat;
+  background-position: right 16px top 11px;
 }
 
 .categories h1 {
@@ -1089,6 +1201,7 @@ footer .footer .card li {
 }
 header {
   font-family: Montserrat, sans-serif;
+  position: relative;
 }
 header .container {
   margin: 0 auto;
@@ -1276,7 +1389,7 @@ header .bottom-header #navbar-responsive {
   top: 120px;
 }
 header .bottom-header .navbar-shrink {
-  padding: 6px 20px;
+  padding: 6px 0;
 }
 header .bottom-header .navbar-shrink #navbar-responsive {
   top: 62px;
