@@ -185,6 +185,7 @@ header {
             right: -100%;
             height: 400px;
             width: 100%;
+
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -214,7 +215,7 @@ header {
       top: 120px;
     }
     .navbar-shrink {
-      padding: 6px 0;
+      padding: 6px 20px;
       #navbar-responsive {
         top: 62px;
       }

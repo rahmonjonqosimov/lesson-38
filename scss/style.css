@@ -158,6 +158,66 @@
   font-size: 90px;
 }
 
+footer ul {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+}
+footer button {
+  border: none;
+}
+footer .footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+footer .footer .card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer .footer .card h4 {
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+}
+footer .footer .card p {
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.25px;
+  max-width: 265px;
+}
+footer .footer .card img {
+  width: 96px;
+  height: 96px;
+}
+footer .footer .card a {
+  color: var(--Black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.25px;
+}
+footer .footer .card li {
+  margin-bottom: 10px;
+}
+@media (max-width: 400px) {
+  footer .footer {
+    flex-direction: column;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -362,7 +422,7 @@ header .bottom-header #navbar-responsive {
   top: 120px;
 }
 header .bottom-header .navbar-shrink {
-  padding: 6px 0;
+  padding: 6px 20px;
 }
 header .bottom-header .navbar-shrink #navbar-responsive {
   top: 62px;
