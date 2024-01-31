@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .home h1 {
   color: chartreuse;
 }
@@ -152,6 +153,163 @@
 
 .commodity h1 {
   color: cadetblue;
+}
+
+.payment {
+  @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+  background: #fafafa;
+}
+.payment .payment-contents {
+  padding-bottom: 64px;
+}
+.payment .payment-contents .main-payment {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.payment .payment-contents .main-payment .pay-texts {
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+  gap: 32px;
+}
+.payment .payment-contents .main-payment .pay-texts .label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.payment .payment-contents .main-payment .pay-texts label {
+  color: #0a0a0a;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.44px;
+}
+.payment .payment-contents .main-payment .pay-texts input {
+  width: 100%;
+  outline: none;
+  padding: 19px 0 19px 16px;
+  border: none;
+  background: #f1f1f1;
+}
+.payment .payment-contents .main-payment .pay-texts input::-moz-placeholder {
+  color: #0a0a0a;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.44px;
+}
+.payment .payment-contents .main-payment .pay-texts input::placeholder {
+  color: #0a0a0a;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.44px;
+}
+.payment .payment-contents .main-payment .pay-texts #date::-moz-placeholder {
+  color: rgba(10, 10, 10, 0.3764705882);
+  font-weight: 500;
+  font-family: "Roboto Slab";
+}
+.payment .payment-contents .main-payment .pay-texts #date::placeholder {
+  color: rgba(10, 10, 10, 0.3764705882);
+  font-weight: 500;
+  font-family: "Roboto Slab";
+}
+.payment .payment-contents .main-payment .pay-texts button {
+  color: var(--Black, #0d0d0d);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  padding: 20px 0 20px;
+  background: #ffc000;
+  border: none;
+}
+.payment .payment-contents h2 {
+  color: #000;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.25px;
+  margin: 0 auto;
+  padding: 64px 0 40px;
+}
+@media (max-width: 870px) {
+  .payment .payment-contents .main-payment {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .payment .payment-contents .pay-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .payment .payment-contents .pay-texts {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 485px) {
+  .payment .payment-contents .pay-texts {
+    width: 370px !important;
+  }
+  .payment .payment-contents .pay-img {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .payment .payment-contents #date::-moz-placeholder {
+    display: none;
+  }
+  .payment .payment-contents #date::placeholder {
+    display: none;
+  }
+  .payment .payment-contents #date:placeholder::after {
+    content: "Cрок хранения";
+  }
+  .payment .payment-contents .payment-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 16px !important;
+    padding: 24px 28px 32px 24px !important;
+  }
+  .payment .payment-contents .pay-img {
+    display: none;
+  }
+  .payment .payment-contents .pay-texts {
+    gap: 16px !important;
+    width: 320px !important;
+  }
+  .payment .payment-contents h2 {
+    padding-top: 24px !important;
+    display: flex;
+    justify-content: start;
+    padding-bottom: 16px !important;
+  }
+  .payment .payment-contents input::-moz-placeholder {
+    color: rgba(10, 10, 10, 0.3764705882) !important;
+  }
+  .payment .payment-contents input::placeholder {
+    color: rgba(10, 10, 10, 0.3764705882) !important;
+  }
+  .payment .payment-contents .label label {
+    display: none;
+  }
 }
 
 .tocomein h1 {

@@ -61,7 +61,27 @@
         </div>
       </section>
     </header>
-    <main class="payment"></main>
+    <main class="payment">
+      <div class="container">
+        <div class="payment-contents">
+          <h2>Оплата</h2>
+          <div class="main-payment">
+            <div class="pay-img">
+              <img src="../images/pay-card.png" alt="pay-card" />
+            </div>
+            <div class="pay-texts">
+              <input name="name" type="text" placeholder="Имя на карте" />
+              <input name="number" type="text" placeholder="Номер карты" />
+              <div class="label">
+                <label for="date">Cрок хранения</label>
+                <input id="date" name="DATE" type="text" placeholder="MM/YY" />
+              </div>
+              <button>Оплатить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
     <script src="../js/main.js"></script>
   </body>
