@@ -1497,6 +1497,7 @@
   flex-shrink: 0;
   outline: none;
   stroke-width: 1px;
+  border: 1px solid #dbdee7;
 }
 .tocomein .card form p {
   padding-top: 16px;
@@ -1511,6 +1512,7 @@
   width: 555px;
   height: 60px;
   outline: none;
+  border: 1px solid #dbdee7;
 }
 .tocomein .card button {
   margin-top: 157px;
@@ -1551,8 +1553,15 @@
     position: relative;
     top: 150px;
   }
+  .tocomein form {
+    margin-right: -100px;
+  }
   .tocomein form input {
     width: 100%;
+  }
+  .tocomein button {
+    position: relative;
+    left: 200px;
   }
 }
 @media (max-width: 768px) {
@@ -1568,8 +1577,16 @@
   .tocomein .card-input {
     margin-top: 150px;
   }
+  .tocomein form {
+    margin-top: 150px;
+    margin-right: -100px;
+  }
   .tocomein form input {
     width: 100%;
+  }
+  .tocomein button {
+    position: relative;
+    left: 200px;
   }
 }
 @media (max-width: 480px) {
@@ -1582,6 +1599,9 @@
     flex-wrap: wrap;
     padding-bottom: 150px;
   }
+  .tocomein form {
+    margin-right: -200px;
+  }
   .tocomein form input {
     width: 100%;
   }
@@ -1592,6 +1612,10 @@
   }
   .tocomein form input {
     width: 100%;
+  }
+  .tocomein button {
+    position: relative;
+    left: 300px;
   }
 }
 

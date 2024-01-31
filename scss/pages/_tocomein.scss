@@ -30,6 +30,7 @@ height: 60px;
 flex-shrink: 0;
 outline: none;
 stroke-width: 1px;
+border: 1px solid #dbdee7;
 
 
     }
@@ -46,6 +47,7 @@ line-height: 24px; /* 150% */
       width: 555px;
 height: 60px;
 outline: none;
+border: 1px solid #dbdee7;
 
     }
   }
@@ -59,6 +61,7 @@ border-radius: 6px;
 background: var(--Yellow, #FFC000);
 border: none;
 transition: 0.3s;
+
 p{
   width: 236.282px;
   color: var(--Black, #0D0D0D);
@@ -101,10 +104,15 @@ line-height: 34px; /* 170% */
     top: 150px;
   }
   form{
+    margin-right:- 100px;
     
     input{
       width: 100%;
     }
+  }
+  button{
+    position: relative;
+    left: 200px;
   }
 
 
@@ -125,13 +133,18 @@ line-height: 34px; /* 170% */
     margin-top: 150px;
   }
   form{
+    margin-top: 150px;
+    margin-right: -100px;
 
     
     input{
       width: 100%;
     }
   }
-
+  button{
+    position: relative;
+    left: 200px;
+  }
 
 }
 
@@ -147,6 +160,7 @@ line-height: 34px; /* 170% */
     padding-bottom: 150px;
   }
   form{
+    margin-right: -200px;
     input{
       width: 100%;
     }
@@ -158,12 +172,17 @@ line-height: 34px; /* 170% */
     margin-top: 150px;
   }
   form{
+
     
     input{
       width: 100%;
     }
   }
-
+  button{
+    position: relative;
+    left: 300px;
+  }
+ 
 
 
 }
