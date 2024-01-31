@@ -1,5 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .home {
-  h1 {
-    color: chartreuse;
+  font-family: Montserrat;
+  .container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .logo {
+    background-image: url(../images/top-bg.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    .logo_box {
+      padding: 300px 0;
+      color: #fff;
+      h1 {
+        color: var(--White, #fff);
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Montserrat;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        letter-spacing: 0.25px;
+        max-width: 588px;
+      }
+      p {
+        color: var(--White, #fff);
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 19.6px */
+        letter-spacing: 0.1px;
+        max-width: 588px;
+        margin: 16px 0 24px 0;
+      }
+    }
+  }
+
+  .card {
+    background: #f2f3f7;
+    .card_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        color: #000;
+        text-align: center;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Montserrat;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        letter-spacing: 0.25px;
+        margin-top: 70px;
+      }
+      .card-1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 145px;
+        .card-1-1 {
+          width: 294px;
+          height: 144px;
+          flex-shrink: 0;
+          border-radius: 12px;
+          background: var(--Tecxt-white, #fff);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 24px;
+          img {
+            margin: 26px 0 45px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .still {
+    background: #f2f3f7;
+    .still_box {
+      h1 {
+        color: #000;
+        text-align: center;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Montserrat;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        letter-spacing: 0.25px;
+        padding-top: 80px;
+        padding-bottom: 32px;
+      }
+      .still-1 {
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 36px;
+        .still-1-1 {
+          width: 264px;
+          height: 522px;
+          flex-shrink: 0;
+          border-radius: 12px;
+          background: #fff;
+          box-shadow: 0px 0px 98px 0px rgba(0, 0, 0, 0.05);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 7px;
+
+          h3 {
+            color: var(--Black, #000);
+            font-variant-numeric: lining-nums proportional-nums;
+            /* BUTTON */
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: 0.75px;
+            text-transform: uppercase;
+            max-width: 245px;
+          }
+          p {
+            color: var(--Black, #000);
+            font-variant-numeric: lining-nums proportional-nums;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%; /* 16.8px */
+            letter-spacing: 0.4px;
+            max-width: 240px;
+          }
+
+          .still-child {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              gap: 40px;
+            }
+          }
+
+          button {
+            display: flex;
+            width: 238px;
+            padding: 8px 20px;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 6px;
+            background: var(--Gold, #ffc000);
+            border: none;
+            color: var(--Black, #000);
+            text-align: center;
+            font-variant-numeric: lining-nums proportional-nums;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            // line-height: 140%;
+            letter-spacing: 0.75px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+  .bot {
+    background: #f2f3f7;
+    .bot_box {
+      padding-bottom: 245px;
+
+      h1 {
+        color: #000;
+        text-align: center;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Montserrat;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        letter-spacing: 0.25px;
+      }
+      .bot-1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35px;
+        gap: 35px;
+        p {
+        }
+        .bot-1-1 {
+          display: none;
+          p {
+            display: none;
+          }
+        }
+
+        .bot-1-1:hover {
+          p {
+            width: 264px;
+            height: 78px;
+            flex-shrink: 0;
+            border-radius: 0px 0px 8px 8px;
+            background: var(--Black, #0d0d0d);
+            color: #ffc000;
+          }
+        }
+      }
+    }
+  }
+
+  .phone {
+    background: #0c0926;
+    .phone_box {
+      color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      .phone-1 {
+        img {
+          margin-top: -230px;
+        }
+      }
+      .phone-2 {
+        .phone-2-child {
+          display: flex;
+          gap: 30px;
+          margin-bottom: 56px;
+        }
+        h2 {
+          color: var(--White, #fff);
+          font-variant-numeric: lining-nums proportional-nums;
+          font-family: Montserrat;
+          font-size: 34px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 140%;
+          letter-spacing: 0.25px;
+          max-width: 754px;
+          margin-top: 40px;
+        }
+        p {
+          color: var(--White, #fff);
+          font-variant-numeric: lining-nums proportional-nums;
+          font-family: Montserrat;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%;
+          letter-spacing: 0.44px;
+          max-width: 738px;
+          margin: 24px 0 40px 0;
+        }
+      }
+    }
+  }
+
+  .cloth {
+    //   background: linear-gradient(to right, #191818e0 50%, #ffffff 50%);
+    .cloth_box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0 20px;
+      .cloth-1 {
+        width: 50%;
+        img {
+          width: 100%;
+        }
+      }
+
+      .cloth-2 {
+        width: 50%;
+        h2 {
+          color: var(--Black, #0d0d0d);
+          font-variant-numeric: lining-nums proportional-nums;
+          font-family: Montserrat;
+          font-size: 34px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 140%;
+          letter-spacing: 0.25px;
+          max-width: 556px;
+        }
+        p {
+          color: #000;
+          font-variant-numeric: lining-nums proportional-nums;
+          font-family: Montserrat;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%;
+          letter-spacing: 0.44px;
+          max-width: 558px;
+          margin: 24px 0;
+        }
+        button {
+          display: flex;
+          width: 200px;
+          padding: 8px 24px;
+          justify-content: space-between;
+          align-items: center;
+          border-radius: 6px;
+          background: var(--Gold, #ffc000);
+          border: none;
+          color: var(--Black, #000);
+          text-align: center;
+          font-variant-numeric: lining-nums proportional-nums;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 140%;
+          letter-spacing: 0.75px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .inter {
+    background: #ffc000;
+    margin-top: -4px;
+    .inter_box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 173px 0;
+      flex-wrap: wrap;
+      h1 {
+        color: var(--Black, #0d0d0d);
+        text-align: center;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Montserrat;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        letter-spacing: 0.25px;
+        max-width: 666px;
+        span {
+          color: var(--Black, #0d0d0d);
+          font-variant-numeric: lining-nums proportional-nums;
+          font-family: Montserrat;
+          font-size: 60px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 140%;
+        }
+      }
+    }
+  }
+  @media (max-width: 1214px) {
+    .card-1 {
+      display: flex;
+      gap: 50px !important;
+    }
+  }
+
+  @media (max-width: 1055px) {
+    .cloth {
+      .cloth_box {
+        align-items: flex-start;
+        gap: 0;
+        flex-wrap: wrap;
+        .cloth-1 {
+          width: 100%;
+        }
+
+        .cloth-2 {
+          width: 100%;
+          button {
+            margin: 0 0 20px 0;
+          }
+        }
+      }
+    }
   }
 }

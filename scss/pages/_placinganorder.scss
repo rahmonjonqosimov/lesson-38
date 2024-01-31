@@ -1,3 +1,185 @@
 .order {
-  // shu yerdan claslar va responsivlikni yozasiz
+  .hero {
+    background: #fafafa;
+    padding-top: 32px;
+    padding-bottom: 64px;
+    h1 {
+      color: #000;
+      text-align: center;
+      font-variant-numeric: lining-nums proportional-nums;
+      font-family: Montserrat;
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 140%;
+      letter-spacing: 0.25px;
+      margin-bottom: 32px;
+    }
+    .card {
+      padding: 25px;
+      background: #fff;
+      border-radius: 12px;
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      .element {
+        width: 250px;
+        height: 250px;
+        background: #ccc;
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        h2 {
+          color: #040921;
+          font-variant-numeric: lining-nums proportional-nums;
+          font-family: Montserrat;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 140%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        img {
+          width: 100px;
+          margin-top: 43px;
+          margin-bottom: 8px;
+        }
+        p {
+          max-width: 754px;
+          color: #000;
+          font-variant-numeric: lining-nums proportional-nums;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%; /* 22.4px */
+          letter-spacing: 0.25px;
+          margin-bottom: 35px;
+        }
+        .bottom {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .narx {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            h3 {
+              color: var(--Black, #0d0d0d);
+              font-variant-numeric: lining-nums proportional-nums;
+              font-family: Montserrat;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 140%; /* 22.4px */
+              letter-spacing: 0.44px;
+              span {
+                color: #000;
+                text-align: center;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px; /* 150% */
+                margin-left: 16px;
+              }
+            }
+          }
+          .added {
+            display: flex;
+            align-items: center;
+            h5 {
+              color: #fff;
+              background: var(--Yellow, #ffc000);
+              font-size: 20px;
+              width: 37px;
+              height: 37px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+            }
+            h4 {
+              color: #000;
+              font-variant-numeric: lining-nums proportional-nums;
+              font-family: Montserrat;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 140%; /* 28px */
+              letter-spacing: 0.15px;
+              width: 93px;
+              height: 37px;
+              background: var(--Gray-6, #f2f2f2);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+    .button {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 28px;
+      margin-bottom: 32px;
+      button {
+        color: var(--Black, #0d0d0d);
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 19.6px */
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+        padding: 18px 110px;
+        background: var(--Yellow, #ffc000);
+        border: none;
+      }
+    }
+    .red {
+      background: #ff5959;
+      padding: 13px;
+      display: flex;
+      justify-content: center;
+      h3 {
+        color: #fff;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Montserrat;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%; /* 22.4px */
+        letter-spacing: 0.25px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    .card {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 550px) {
+    .card {
+      .text {
+        .bottom {
+          flex-direction: column;
+          gap: 30px;
+        }
+      }
+    }
+    .button {
+      button {
+        padding: 18px 0 !important;
+        width: 100%;
+      }
+    }
+  }
 }
