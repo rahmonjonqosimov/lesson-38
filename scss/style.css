@@ -736,6 +736,20 @@
   background-repeat: no-repeat;
   background-position: right 16px top 11px;
 }
+@media (max-width: 1000px) {
+  .register .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 650px) {
+  .register .hero img {
+    width: 320px;
+  }
+  .register .hero form button {
+    width: 100%;
+  }
+}
 
 .categories h1 {
   color: #000;
@@ -1114,6 +1128,184 @@
   }
   .gotoprodact .b h1 {
     margin-left: -120px;
+  }
+}
+
+.order .hero {
+  background: #fafafa;
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+.order .hero h1 {
+  color: #000;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Montserrat;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.25px;
+  margin-bottom: 32px;
+}
+.order .hero .card {
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.order .hero .card .element {
+  width: 250px;
+  height: 250px;
+  background: #ccc;
+}
+.order .hero .card .text {
+  display: flex;
+  flex-direction: column;
+}
+.order .hero .card .text h2 {
+  color: #040921;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.order .hero .card .text img {
+  width: 100px;
+  margin-top: 43px;
+  margin-bottom: 8px;
+}
+.order .hero .card .text p {
+  max-width: 754px;
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+  letter-spacing: 0.25px;
+  margin-bottom: 35px;
+}
+.order .hero .card .text .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.order .hero .card .text .bottom .narx {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.order .hero .card .text .bottom .narx h3 {
+  color: var(--Black, #0d0d0d);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.44px;
+}
+.order .hero .card .text .bottom .narx h3 span {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  margin-left: 16px;
+}
+.order .hero .card .text .bottom .added {
+  display: flex;
+  align-items: center;
+}
+.order .hero .card .text .bottom .added h5 {
+  color: #fff;
+  background: var(--Yellow, #ffc000);
+  font-size: 20px;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.order .hero .card .text .bottom .added h4 {
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 28px */
+  letter-spacing: 0.15px;
+  width: 93px;
+  height: 37px;
+  background: var(--Gray-6, #f2f2f2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order .hero .button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 28px;
+  margin-bottom: 32px;
+}
+.order .hero .button button {
+  color: var(--Black, #0d0d0d);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  padding: 18px 110px;
+  background: var(--Yellow, #ffc000);
+  border: none;
+}
+.order .hero .red {
+  background: #ff5959;
+  padding: 13px;
+  display: flex;
+  justify-content: center;
+}
+.order .hero .red h3 {
+  color: #fff;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Montserrat;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 22.4px */
+  letter-spacing: 0.25px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+@media (max-width: 900px) {
+  .order .card {
+    flex-direction: column;
+  }
+}
+@media (max-width: 550px) {
+  .order .card .text .bottom {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .order .button button {
+    padding: 18px 0 !important;
+    width: 100%;
   }
 }
 
