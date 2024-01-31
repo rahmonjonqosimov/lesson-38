@@ -116,7 +116,7 @@
   font-weight: 400;
   line-height: 130%; /* 32.5px */
   letter-spacing: 0.5px;
-  padding-top: 26px;
+  padding-top: -45px;
   text-align: center;
 }
 .categories .big-card-3 {
@@ -140,6 +140,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
   }
 }
 @media (max-width: 480px) {
@@ -154,8 +155,131 @@
   color: cadetblue;
 }
 
-.tocomein h1 {
-  font-size: 90px;
+.tocomein .vxod {
+  color: #000;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Montserrat;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 47.6px */
+  letter-spacing: 0.25px;
+  padding-top: 56px;
+}
+.tocomein .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  padding-top: 131px;
+  margin-left: -110px;
+}
+.tocomein .card form {
+  margin-top: -150px;
+}
+.tocomein .card form :first-child {
+  width: 555px;
+  height: 60px;
+  flex-shrink: 0;
+  outline: none;
+  stroke-width: 1px;
+}
+.tocomein .card form p {
+  padding-top: 16px;
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+}
+.tocomein .card form :last-child {
+  width: 555px;
+  height: 60px;
+  outline: none;
+}
+.tocomein .card button {
+  margin-top: 157px;
+  margin-left: -595px;
+  width: 262px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: var(--Yellow, #FFC000);
+  border: none;
+  transition: 0.3s;
+}
+.tocomein .card button p {
+  width: 236.282px;
+  color: var(--Black, #0D0D0D);
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px; /* 170% */
+}
+.tocomein .card button:hover {
+  background: #ffe189;
+}
+@media (max-width: 976px) {
+  .tocomein .vxod {
+    text-align: center;
+  }
+  .tocomein .card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+  }
+  .tocomein .card-input {
+    padding-top: 150px;
+    position: relative;
+    top: 150px;
+  }
+  .tocomein form input {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .tocomein .vxod {
+    text-align: center;
+  }
+  .tocomein .card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+  }
+  .tocomein .card-input {
+    margin-top: 150px;
+  }
+  .tocomein form input {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .tocomein .vxod {
+    text-align: center;
+  }
+  .tocomein .card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+  }
+  .tocomein form input {
+    width: 100%;
+  }
+  .tocomein .card-input {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+  }
+  .tocomein form input {
+    width: 100%;
+  }
 }
 
 * {
