@@ -1,3 +1,138 @@
 .payment {
-  // shu yerdan claslar va responsivlikni yozasiz
+  @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+  background: #fafafa;
+  .payment-contents {
+    padding-bottom: 64px;
+    .main-payment {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .pay-texts {
+        display: flex;
+        flex-direction: column;
+        width: 460px;
+        gap: 32px;
+        .label {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        label {
+          color: #0a0a0a;
+          font-family: "Montserrat";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%;
+          letter-spacing: 0.44px;
+        }
+        input {
+          width: 100%;
+          outline: none;
+          padding: 19px 0 19px 16px;
+          border: none;
+          background: #f1f1f1;
+        }
+        input::placeholder {
+          color: #0a0a0a;
+          font-family: "Montserrat";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%;
+          letter-spacing: 0.44px;
+        }
+        #date::placeholder {
+          color: #0a0a0a60;
+          font-weight: 500;
+          font-family: "Roboto Slab";
+        }
+        button {
+          color: var(--Black, #0d0d0d);
+          font-family: "Montserrat";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 140%;
+          letter-spacing: 0.75px;
+          text-transform: uppercase;
+          padding: 20px 0 20px;
+          background: #ffc000;
+          border: none;
+        }
+      }
+    }
+    h2 {
+      color: #000;
+      text-align: center;
+      font-family: "Montserrat";
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%;
+      letter-spacing: 0.25px;
+      margin: 0 auto;
+      padding: 64px 0 40px;
+    }
+    @media (max-width: 870px) {
+      .main-payment {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
+      .pay-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+      }
+      .pay-texts {
+        margin: 0 auto;
+      }
+    }
+    @media (max-width: 485px) {
+      .pay-texts {
+        width: 370px !important;
+      }
+      .pay-img {
+        display: none;
+      }
+    }
+    @media (max-width: 400px) {
+      #date::placeholder {
+        display: none;
+      }
+      #date:placeholder::after {
+        content: "Cрок хранения";
+      }
+      .payment-contents {
+        display: flex;
+        flex-direction: column;
+        gap: 16px !important;
+        padding: 24px 28px 32px 24px !important;
+      }
+      .pay-img {
+        display: none;
+      }
+      .pay-texts {
+        gap: 16px !important;
+        width: 320px !important;
+      }
+      h2 {
+        padding-top: 24px !important;
+        display: flex;
+        justify-content: start;
+        padding-bottom: 16px !important;
+      }
+      input::placeholder {
+        color: #0a0a0a60 !important;
+      }
+      .label {
+        label {
+          display: none;
+        }
+      }
+    }
+  }
 }

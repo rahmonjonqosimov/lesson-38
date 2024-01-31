@@ -20,6 +20,7 @@
 
 .prodact {
   .hero {
+    margin-bottom: 64px;
     .hero-style {
       .hero-text {
         color: #000;
@@ -33,7 +34,7 @@
       }
       .hero-contents {
         display: flex;
-        gap: 128px;
+        gap: 100px;
         justify-content: space-between;
         .hero-box {
           .hero-prices {
@@ -78,6 +79,193 @@
           }
         }
       }
+    }
+  }
+  .order {
+    margin-bottom: 64px;
+    .order-style {
+      .order-text {
+        color: #000;
+        text-align: center;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-size: 34px;
+        margin-bottom: 32px;
+        font-weight: 700;
+        line-height: 140%;
+        letter-spacing: 0.25px;
+      }
+      .order-cards {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 24px;
+        .order-card {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          .order-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 43px;
+            .order-text2 {
+              color: #040921;
+              font-variant-numeric: lining-nums proportional-nums;
+              font-size: 24px;
+              font-weight: 700;
+              line-height: 140%;
+            }
+          }
+          .star {
+            margin-bottom: 8px;
+          }
+          .order-par {
+            max-width: 754px;
+            color: #000;
+            font-variant-numeric: lining-nums proportional-nums;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 160%;
+            margin-bottom: 35px;
+            letter-spacing: 0.25px;
+          }
+          .order-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .order-prices {
+              display: flex;
+              align-items: center;
+              gap: 40px;
+              .order-price1 {
+                color: var(--Black, #0d0d0d);
+                font-variant-numeric: lining-nums proportional-nums;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 140%;
+                letter-spacing: 0.44px;
+              }
+              .order-price2 {
+                color: #000;
+                font-variant-numeric: lining-nums proportional-nums;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 140%;
+                letter-spacing: 0.44px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .shop {
+    margin-bottom: 80px;
+    .shop-style {
+      margin-bottom: 64px;
+      .shop-text {
+        color: #000;
+        text-align: center;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 140%;
+        margin-bottom: 32px;
+        letter-spacing: 0.25px;
+      }
+      .shop-cards {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 17px;
+      }
+    }
+    .categori-style {
+      .categori-text {
+        color: #000;
+        text-align: center;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 140%;
+        margin-bottom: 32px;
+        letter-spacing: 0.25px;
+      }
+      .categori-cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 17px;
+        img {
+          max-width: 207px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .hero {
+    .hero-contents {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 730px) {
+  .order {
+    .order-card {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    .hero-content {
+      input {
+        width: 400px !important;
+      }
+      button {
+        width: 400px !important;
+      }
+    }
+    .hero-images {
+      gap: 5px !important;
+      img {
+        max-width: 160px !important;
+      }
+    }
+    .hero-prices {
+      max-width: 400px;
+    }
+  }
+  .order-text2 {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 440px) {
+  .hero-content {
+    input {
+      max-width: 300px !important;
+    }
+    button {
+      max-width: 300px !important;
+    }
+  }
+  .hero-prices {
+    max-width: 300px !important;
+    .hero-price {
+      flex-wrap: wrap;
+    }
+  }
+  .order-footer {
+    flex-wrap: wrap;
+    .order-prices {
+      gap: 5px !important;
     }
   }
 }
