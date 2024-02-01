@@ -810,6 +810,73 @@
   color: cadetblue;
 }
 
+.basket {
+  background: #fafafa;
+}
+.basket .basket-contents {
+  padding: 32px 0 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.basket .basket-contents .basket-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: start;
+  align-items: start;
+  width: 550px;
+}
+.basket .basket-contents .basket-texts h1 {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 140%;
+}
+.basket .basket-contents .basket-texts button {
+  color: var(--Black, #0d0d0d);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: uppercase;
+  padding: 20px 24px;
+  background: #ffc000;
+  border: none;
+}
+.basket .basket-contents .basket-texts p {
+  font-size: 14px;
+}
+@media (max-width: 870px) {
+  .basket .basket-contents {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+}
+@media (max-width: 580px) {
+  .basket .basket-contents .basket-contents {
+    display: flex;
+    gap: 32px;
+  }
+  .basket .basket-contents .basket-img {
+    width: 360px !important;
+  }
+  .basket .basket-contents .basket-img img {
+    width: 100%;
+  }
+  .basket .basket-contents .basket-img .basket-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }
+}
+
 .gotoprodact {
   background: #fafafa;
   scroll-behavior: smooth;
