@@ -209,23 +209,23 @@
         gap: 35px;
         p {
         }
-        .bot-1-1 {
-          display: none;
-          p {
-            display: none;
-          }
-        }
+        // .bot-1-1 {
+        //   display: none;
+        //   p {
+        //     display: none;
+        //   }
+        // }
 
-        .bot-1-1:hover {
-          p {
-            width: 264px;
-            height: 78px;
-            flex-shrink: 0;
-            border-radius: 0px 0px 8px 8px;
-            background: var(--Black, #0d0d0d);
-            color: #ffc000;
-          }
-        }
+        // .bot-1-1:hover {
+        //   p {
+        //     width: 264px;
+        //     height: 78px;
+        //     flex-shrink: 0;
+        //     border-radius: 0px 0px 8px 8px;
+        //     background: var(--Black, #0d0d0d);
+        //     color: #ffc000;
+        //   }
+        // }
       }
     }
   }
